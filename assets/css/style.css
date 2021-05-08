@@ -13,7 +13,7 @@ p {
 }
 /* General and Commons */
 section.feature {
-  height: 90vh;
+  height: 100vh;
   /* background-color: rgb(165, 252, 185); */
 }
 
@@ -53,7 +53,7 @@ section img {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04aa6d;
+  /* background-color: #04aa6d; */
   color: white;
 }
 
@@ -69,9 +69,12 @@ section img {
 
 header {
     color: #fff;
-    background: url(../img/headerBanner.png);
-    height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    background: url(../img/headerBanner2.png);
+    height: 110vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    clip-path: ellipse(100% 55% at 48% 44%);
 }
 
 header .container {
@@ -85,10 +88,13 @@ header .downloadBtn {
     height: 50px;
     width: 150px;
     padding: 5px;
+    box-shadow: 7px 5px 14px 0px rgba(8, 145, 19, 0.75);
+    /* -webkit-box-shadow: 7px 5px 14px 0px rgba(156, 156, 156, 0.75); */
+    /* -moz-box-shadow: 7px 5px 14px 0px rgba(156, 156, 156, 0.75); */
 }
 
 #whyChooseUs {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -119,6 +125,34 @@ header .downloadBtn {
 #footerCTA {
   height: 300px;
   background-color: #34495e;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+}
+ul.listFeature {
+    margin-top: 30px;
+}
+ul.listFeature li {
+    padding: 8px 0px;
+    list-style: none;
+    font-size: 20px;
+    margin-left: -30px;
+}
+
+#footerCTA h4{
+}
+
+#footerCTA li {
+    font-size: 15px;
+    list-style-type: none;
+    font-weight: 200;
+    margin-left: -30px;
+}
+
+#footerCTA li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer {
