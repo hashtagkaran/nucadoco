@@ -13,12 +13,21 @@ p {
 }
 /* General and Commons */
 section.feature {
-  height: 100vh;
+  height: 90vh;
   /* background-color: rgb(165, 252, 185); */
 }
 
+
 section img {
   width: 70%;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #169D4F;
+    padding: 10px;
+    opacity: 1;
+    /* Firefox */
 }
 
 .feature .container  {
@@ -47,8 +56,8 @@ section img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #169D4F;
+  color: #fff
 }
 
 /* Add an active class to highlight the current page */
@@ -69,24 +78,26 @@ section img {
 
 header {
     color: #fff;
-    background: url(../img/headerBanner2.png);
-    height: 110vh;
+    background: url(../img/bannerHome2.png);
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: right;
-    clip-path: ellipse(100% 55% at 48% 44%);
+    /* clip-path: ellipse(100% 55% at 48% 44%); */
 }
 
 header .container {
     height: 100%;
-    display: flex;
-    align-items: center;
+    top: 400px;
+    /* background-color: blue; */
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 header .downloadBtn {
-    margin: 10px;
+    margin: 30px 20px 0 0;
     height: 50px;
-    width: 150px;
+    width: 200px;
     padding: 5px;
     box-shadow: 7px 5px 14px 0px rgba(8, 145, 19, 0.75);
     /* -webkit-box-shadow: 7px 5px 14px 0px rgba(156, 156, 156, 0.75); */
@@ -94,28 +105,44 @@ header .downloadBtn {
 }
 
 #whyChooseUs {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 #whyChooseUs h2 {
   padding: 30px;
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 50px;
+  text-transform: capitalize;
   margin-bottom: 30px;
+  display:inline-block;
+  position:relative;
+  margin-bottom: 100px;
 }
 
+#whyChooseUs h2::after{
+  content:'';
+  height:2px;
+  width:70%;
+  background:#24C468;
+  position:absolute;
+  left:calc(50% - 33%);
+  bottom: 10px;
+}
+#whyChooseUs h4 {
+    margin-top: 20px;
+}
 #whyChooseUs p {
   width: 80%;
   margin: auto;
   padding: 20px;
-  margin-top: 20px;
+  font-size: 16px;
 }
 
 .featureBtn {
-    background-color: #11b155; 
-    color: #fff; 
+    background-color: rgba(17, 177, 85, .25);
+    color: #169D4F;
     padding: 10px; 
     border: none; 
     width: 200px; 
